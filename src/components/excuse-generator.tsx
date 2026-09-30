@@ -101,7 +101,7 @@ function getRandomItem<T>(items: T[]) {
 
 export function ExcuseGenerator() {
   const [selectedVibe, setSelectedVibe] = useState<(typeof selectorItems)[number]>("The Bible");
-  const [message, setMessage] = useState<string>(getRandomItem(vibeMessages["The Bible"]));
+  const [message, setMessage] = useState<string>(vibeMessages["The Bible"][0]);
   const [generation, setGeneration] = useState(4);
   const [copied, setCopied] = useState(false);
 
