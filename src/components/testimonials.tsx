@@ -23,7 +23,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="mx-auto w-full max-w-[1200px] px-5 py-12">
+    <section id="reviews" className="mx-auto w-full max-w-[1200px] px-5 py-12">
       <SectionIntro
         eyebrow="UNFILTERED REVIEWS"
         title="From the Newly Liberated"
@@ -32,7 +32,7 @@ export function Testimonials() {
 
       <div className="grid gap-5 md:grid-cols-3">
         {testimonials.map((item) => (
-          <article key={item.author} className="rounded-[22px] border border-[#d8d1d6] bg-white p-5 shadow-[0_12px_20px_rgba(25,22,35,0.05)]">
+          <article key={item.author} className="card-lift rounded-[22px] border border-[#d8d1d6] bg-white p-5 shadow-[0_12px_20px_rgba(25,22,35,0.05)]">
             <div className="mb-4 flex items-center gap-1 text-[#ffb703]">
               {Array.from({ length: 5 }).map((_, idx) => (
                 <span key={idx}>★</span>

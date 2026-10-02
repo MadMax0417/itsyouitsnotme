@@ -146,7 +146,9 @@ export function ExcuseGenerator() {
                 className="text-xl text-[#ff4fb0]"
                 aria-label="Regenerate vibe"
               >
-                ↻
+                <span key={generation} className="spin-once inline-block" aria-hidden>
+                  ↻
+                </span>
               </button>
             </div>
 
@@ -169,7 +171,7 @@ export function ExcuseGenerator() {
 
             <div className="mt-4 rounded-2xl border border-[#d3c7f1] bg-[#f3ecff] p-3 text-[11px] font-medium text-[#514c63]">
               <span className="font-black uppercase tracking-[0.12em] text-[#2a2940]">Exit Diagnostics</span>
-              <ul className="mt-3 space-y-1.5">
+              <ul key={selectedVibe} className="animate-message-swap mt-3 space-y-1.5">
                 {diagnostics[selectedVibe].map((item) => (
                   <li key={item}>• {item}</li>
                 ))}
@@ -186,7 +188,7 @@ export function ExcuseGenerator() {
             </div>
 
             <div className="rounded-[22px] border border-[#d4cedi] bg-[#f6f1ef] p-5 text-[15px] font-medium text-[#1d1a2c] shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] sm:text-[22px]">
-              <p className="leading-[1.1] tracking-[-0.05em]">“{message}”</p>
+              <p key={generation} className="animate-message-swap leading-[1.1] tracking-[-0.05em]">“{message}”</p>
             </div>
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
@@ -202,7 +204,9 @@ export function ExcuseGenerator() {
                 onClick={handleCopy}
                 className="rounded-full border border-[#2d2940] bg-white px-5 py-2.5 text-sm font-black uppercase tracking-[0.08em] text-[#1e1b2e]"
               >
-                {copied ? "Copied!" : "Copy to Clipboard"}
+                <span key={copied ? "copied" : "copy"} className="inline-block animate-pop-in">
+                  {copied ? "Copied!" : "Copy to Clipboard"}
+                </span>
               </button>
             </div>
 

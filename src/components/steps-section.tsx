@@ -23,7 +23,7 @@ import { SectionIntro } from "./section-intro";
 
 export function StepsSection() {
   return (
-    <section className="mx-auto w-full max-w-[1200px] px-5 py-12">
+    <section id="how-it-works" className="mx-auto w-full max-w-[1200px] px-5 py-12">
       <SectionIntro
         eyebrow="EXIT PROTOCOL"
         title="How It Works in 3 Painless Steps"
@@ -32,7 +32,7 @@ export function StepsSection() {
 
       <div className="grid gap-5 md:grid-cols-3">
         {steps.map((step) => (
-          <article key={step.number} className="rounded-[22px] border border-[#1d1a2a] bg-[#f6f4f1] p-4 shadow-[0_10px_22px_rgba(28,24,41,0.06)]">
+          <article key={step.number} className="card-lift rounded-[22px] border border-[#1d1a2a] bg-[#f6f4f1] p-4 shadow-[0_10px_22px_rgba(28,24,41,0.06)]">
             <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff4fb0] text-lg font-black text-white">
               {step.number}
             </div>

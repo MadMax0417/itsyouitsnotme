@@ -35,7 +35,7 @@ export function UtilityToolkit() {
 
       <div className="grid gap-5 md:grid-cols-3">
         {utilityCards.map((card) => (
-          <article key={card.title} className={`rounded-[22px] border border-[#1d1a2a] ${card.accent} p-4`}>
+          <article key={card.title} className={`card-lift rounded-[22px] border border-[#1d1a2a] ${card.accent} p-4`}>
             <div className="mb-4 flex items-center justify-between">
               <div className="rounded-full border border-[#2f2a43] bg-white px-2 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-[#332d45]">
                 {card.label}
