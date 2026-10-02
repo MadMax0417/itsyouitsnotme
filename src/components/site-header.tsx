@@ -10,7 +10,7 @@ export function SiteHeader() {
     <header className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-4 px-5 py-4 text-[11px] font-semibold text-[#2f2a40]">
       <div className="flex items-center gap-3">
         <div className="text-xl font-black tracking-[-0.08em] text-[#1b1a2b]">
-          IT'S NOT YOU, IT'S ME
+          IT&apos;S NOT YOU, IT&apos;S ME
         </div>
       </div>
 
